@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">PaygSDKAndroidSample</string>
+    <string name="hint_payment_url">Enter payment URL</string>
+    <string name="hint_order_id">Enter order id</string>
+    <string name="hint_merchant_id">Enter Merchant Id</string>
+    <string name="hint_auth_key">Enter Authentication Key</string>
+    <string name="hint_auth_token">Enter Authentication Token</string>
+    <string name="hint_order_amount">Enter order amount</string>
+    <string name="hint_redirect_url">Enter Redirect URL</string>
+    <string name="hint_customer_mobile_no">Enter Customer Mobile No</string>
+    <string name="wallet_type">Wallet Type</string>
+    <!--    AirtelMoney/ AmazonPay/ FreeCharge/ ITZ/ JIOMONEY/ OLAMoney/ Oxigen/ PayTm/ PayCash/ PayG/ PhonePe/ Payzapp/ YesWallet-->
+    <string-array name="array_wallet_types">
+        <item>AirtelMoney</item>
+        <item>AmazonPay</item>
+        <item>FreeCharge</item>
+        <item>ITZ</item>
+        <item>JIOMONEY</item>
+        <item>OLAMoney</item>
+        <item>Oxigen</item>
+        <item>PayTm</item>
+        <item>PayG</item>
+        <item>PhonePe</item>
+        <item>Payzapp</item>
+        <item>YesWallet</item>
+    </string-array>
+
+
+    <!--TODO: This is for testing merchant key id and auth key (UAT), need to change for production and place somewhere else these values -->
+    <!-- <string name="merchant_keyId">7963</string>
+    <string name="auth_key">d58b4d0692ed4d9997e88ab22a0acfbb</string>
+    <string name="auth_token">2c76c9963cc441da91baa934dee3bcd8</string>-->
+
+    <!--TODO: This is base url for payment(UAT), need to change for production-->
+    <string name="base_url_payment">https://uat.payg.in/payment/payment?orderid=</string>
+    <string name="order_id">210922M7963U63943559</string>
+
+
+    <!--
+        static const String paymentURL = 'https://uatapi.payg.in/payment/api/order';
+        static const String AuthenticationKey = 'd58b4d0692ed4d9997e88ab22a0acfbb';
+        static const String AuthenticationToken = '2c76c9963cc441da91baa934dee3bcd8';
+        static const String SecureHashKey = 'b29cd704083442e2ac2e73f903167da4';
+        static const String MerchantKeyId = '7963';
+        static const String RedirectUrl = 'https://payg.in/';
+    -->
+
+</resources>

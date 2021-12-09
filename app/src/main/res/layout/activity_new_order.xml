@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    tools:context=".NewOrderActivity">
+
+
+    <EditText
+        android:id="@+id/editTextMerchantId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="merchant id"
+        android:text="22685"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAuthKey"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAuthKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="auth key"
+        android:text="9443d0fc6df24d26b31d54e6c89cbc5d"
+        android:password="true"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAuthToken"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAuthToken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="b34ffabbbe1a48fdb92940bb3412cf85"
+        android:password="true"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOrderAmount"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextOrderAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_order_amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCustomerMobileNo"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextCustomerMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_customer_mobile_no"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRedirectURL"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextRedirectURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_redirect_url"
+        android:inputType="textWebEditText"
+        android:text="https://payg.in/"
+        app:layout_constraintBottom_toTopOf="@+id/textViewWalletType"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWalletType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wallet_type"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerWalletTypes"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <Spinner
+        android:id="@+id/spinnerWalletTypes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnProceed"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Spinner>
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Proceed"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextOrderAmount" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btnCheckOrderStatus"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:text="Order Status"-->
+    <!--        app:layout_constraintEnd_toStartOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/btnProceed" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
