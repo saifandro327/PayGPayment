@@ -128,7 +128,7 @@ public class NewOrderActivity extends AppCompatActivity {
         final PackageManager pckManager = getApplicationContext().getPackageManager();
         ApplicationInfo applicationInformation = null;
         try{
-            applicationInformation = pckManager.getApplicationInfo("in.payg.androidsdksample", PackageManager.GET_META_DATA);
+            applicationInformation = pckManager.getApplicationInfo("com.example.paygpayment", PackageManager.GET_META_DATA);
             String packageName = applicationInformation.packageName;
             Log.d("NewOrderActivity", "package name: "+packageName);
         }catch (Exception ex ){

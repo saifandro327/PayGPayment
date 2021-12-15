@@ -2,7 +2,7 @@ package com.example.paygpayment;
 
 public class AppConstants {
 
-    public static String BASE_URL = "https://uatapi.payg.in/payment/"; // This is UAT base URL
+    public static String BASE_URL = "https://paygapi.payg.in/payment/"; // This is UAT base URL
 //    public static String BASE_URL = " https://paygapi.payg.in/payment/";
     public static final String CREATE_ORDER = "api/Order/Create";
     public static final String ORDER_DETAIL = "api/Order/Detail";

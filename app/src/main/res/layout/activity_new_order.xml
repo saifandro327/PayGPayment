@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,7 +34,7 @@
         android:id="@+id/editTextAuthToken"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="b34ffabbbe1a48fdb92940bb3412cf85"
+        android:text="cc81b6c83f3d494eaf367cccd095dd3b"
         android:password="true"
         app:layout_constraintBottom_toTopOf="@+id/editTextOrderAmount"
         app:layout_constraintEnd_toStartOf="parent"
@@ -44,6 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_order_amount"
+        android:text="2"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/editTextCustomerMobileNo"
         app:layout_constraintEnd_toStartOf="parent"
@@ -54,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/hint_customer_mobile_no"
+        android:text="1234567890"
         android:inputType="number"
         android:maxLength="10"
         app:layout_constraintBottom_toTopOf="@+id/editTextRedirectURL"

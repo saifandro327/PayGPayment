@@ -199,6 +199,7 @@ public class PaymentActivity extends AppCompatActivity {
                 return true;
             }
 
+
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
@@ -245,6 +246,7 @@ public class PaymentActivity extends AppCompatActivity {
         setResult(RESULT_OK, output);
         finish();
     }
+
 }
 
 

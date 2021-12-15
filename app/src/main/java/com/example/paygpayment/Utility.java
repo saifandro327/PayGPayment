@@ -1,6 +1,7 @@
 package com.example.paygpayment;
 
 import android.util.Base64;
+import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -54,6 +55,7 @@ public class Utility {
             jsonObjTransactionData.put("PAYMENTTYPE", "Upiintent"); // Wallet/UPI/CreditCard/DebitCard (This is seamless integration it will navigate to payment option directly without going to payment gateway page)
 //            JSONObject jsonObjWalletType = new JSONObject();
 //            jsonObjWalletType.put("USERNAME", null);
+
 //            jsonObjWalletType.put("WALLETTYPE", walletType);
 //            jsonObjWalletType.put("FIRSTNAME", null);
 //            jsonObjWalletType.put("LASTNAME", null);
@@ -138,6 +140,8 @@ public class Utility {
             jsonObject.put("PaymentTransactionId", null);
             jsonObject.put("PaymentType", null);
 
+            Log.d(Utility.class.getName(), "hello orderkeyid " + orderKeyId  );
+
         } catch (JSONException jsonException) {
             jsonException.printStackTrace();
         }
@@ -157,4 +161,5 @@ public class Utility {
         str = filterStr.replaceAll("-", "");
         return Integer.parseInt(str);
     }
+
 }
